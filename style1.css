@@ -1,0 +1,97 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 120%;
+	height :100vh;
+	width: 100%;
+	background-image: url("background.png");
+	background-size: cover;
+}
+
+.header {
+	width: 30%;
+	margin-top: 100px;
+	margin-left: 180px;
+	color: white;
+	background: rgb(138, 231, 236);
+	text-align: center;
+	border: 0px solid #B0C4DE;
+	border-bottom: none;
+	border-radius: 10px 10px 10px 10px;
+	padding: 20px;
+}
+form, .content {
+	width: 30%;
+	margin: 0px auto;
+	margin-left: 180px;
+	padding: 20px;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+	margin: 3px;
+}
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.btn {
+	padding: 10px;
+	font-size: 15px;
+	color: white;
+	background: rgb(95, 221, 228);
+	border: none;
+	border-radius: 5px;
+}
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+.success {
+	color: #3c763d; 
+	background: white; 
+	border: 0px solid #3c763d;
+	margin-bottom: 20px;
+}
+
+.logout{
+	margin-top: 30px;
+}
+
+#footer{
+	position: fixed;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+    background-color: black;
+	border-radius: 10px 10px 0px 0px;
+}
+
+p.copyright {
+	position: relative;
+	color: #fff;
+	padding-top: 5px;
+	text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: sans-serif;
+	font-weight: 400;
+}
