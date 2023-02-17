@@ -850,7 +850,7 @@ footer .btn {
 	transition: opacity .3s linear;	
 }
 footer .btn:hover {
-	opacity: .7;
+	opacity: .6;
 }
 
 /*PROPERTIES FOR MAKING WEBSITE RESPONSIVE*/
