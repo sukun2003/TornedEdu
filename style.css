@@ -54,12 +54,12 @@ nav ul li a {
 nav ul li a:hover {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	background: #0a5145;
 }
 .active {
 	color: #fff;
 	border-radius: 5px;
-	background: #DF2771;
+	background: #0a5145;
 }
 .srch {
 	padding: 2px 10px;
@@ -407,11 +407,25 @@ a, button {
 .card:nth-child(2){
 	border-top: 5px solid blue;
 }
+.card:nth-child(3){
+	border-top: 5px solid green;
+}
+.card:nth-child(4){
+	border-top: 5px solid blue;
+}
 .card:nth-child(1):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
 				1px 1px 30px rgba(0,255,0,0.5);
 }
 .card:nth-child(2):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
+				1px 1px 30px rgba(0,0,255,0.5);
+}
+.card:nth-child(3):hover {
+	box-shadow: inset 0px 0px 10px rgba(0,255,0,0.5),
+				1px 1px 30px rgba(0,255,0,0.5);
+}
+.card:nth-child(4):hover {
 	box-shadow: inset 0px 0px 10px rgba(0,0,255,0.5),
 				1px 1px 30px rgba(0,0,255,0.5);
 }
