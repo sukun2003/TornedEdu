@@ -18,6 +18,28 @@
  		   $('nav').removeClass('black');
  		 }
 		})
+		
+        function displayNextImage() {
+            x = (x === images.length - 1) ? 0 : x + 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function displayPreviousImage() {
+            x = (x <= 0) ? images.length - 1 : x - 1;
+            document.getElementById("img").src = images[x];
+        }
+
+        function startTimer() {
+            setInterval(displayNextImage, 5000);
+        }
+
+        var images = [], x = -1;
+        images[0] = "imgage/karn.jpg";
+        images[1] = "imgage.gurukul.jpg";
+        images[2] = "image/abhimanyu.jpg";
+        images[3] = "imgage/sudharshanjpg";
+        images[4] = "image/rudr.jpg";
+	
 	</script>
 </head>
 <body>
@@ -65,6 +87,9 @@
 			</ul>
 		</div>
 	</header>
+	 <div class="swapimage">
+      <a href="#contactus_section"><img id="img" src="imgage/karn.jpg"/></a>
+    </div>
 
 
 <!-- Some Popular Subjects -->
