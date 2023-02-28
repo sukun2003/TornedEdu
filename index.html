@@ -18,12 +18,36 @@
  		   $('nav').removeClass('black');
  		 }
 		})
-		
-        
+	</script>
+	 <script type = "text/javascript">
+
+		// alert ("welcome to the gargelectronics ambah");
+		function displayNextImage() {
+			x = (x === images.length - 1) ? 0 : x + 1;
+			document.getElementById("img").src = images[x];
+		}
 	
+		function displayPreviousImage() {
+			x = (x <= 0) ? images.length - 1 : x - 1;
+			document.getElementById("img").src = images[x];
+		}
+	
+		function startTimer() {
+			setInterval(displayNextImage, 5000);
+		}
+	
+		var images = [], x = -1;
+		
+		images[0] = "images/courses/abhimanyu.jpg";
+		images[1] = "images/courses/gurukul.jpg";
+		images[2] = "images/courses/karn.jpg";
+		images[3] = "images/courses/rudr.jpg";
+		images[4] = "images/courses/audharshan.jpg";
+		
+  
 	</script>
 </head>
-<body>
+<body onload="startTimer()">
 <!-- Navigation Bar -->
 	<header id="header">
 		<nav>
@@ -173,7 +197,14 @@
 		</div>
 	</div>
 
+<!-- swap images of the courses -->
+	<div class="swapimage  ">
 
+		<center><p style="font-size: 50px; padding: 100px">OUR POPULAR BACTHES</p></center>
+<div >
+	  <a href="laptopdeals.html"><img id="img" src="images/courses/abhimanyu.jpg" style="width: 100%; display: block;margin: 0% ; padding: 0%;"/></a>
+	</div>
+	</div>
 <!-- SERVICES -->
 	<div class="service-swipe">
 		<div class="diffSection" id="services_section">
